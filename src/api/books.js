@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 let db = require('../db')
+const cloudinary = require('cloudinary').v2;
 
 
 router.post('/', async function (req, res) {
@@ -23,6 +24,23 @@ router.post('/', async function (req, res) {
     }
 })
 
+router.post('/multi', async function (req, res) {
+    const body = req.body
+    try {
+        let response = []
+        for (let i = 0; i < body.length; i++) {
+            const element = body[i];
+            const libroRef = await db.collection('books').add(element);
+            response.push(libroRef.id)
+        }
+
+        res.json(response)
+
+    } catch (error) {
+        console.error('Error adding the book: ', error);
+        res.send('Error adding the book: ', error)
+    }
+})
 
 router.put('/:id', async function (req, res) {
     const body = req.body
@@ -46,8 +64,8 @@ router.delete('/:id', async function (req, res) {
     const body = req.body
     const id = req.params.id
     try {
-
-        const libroRef = await db.collection('books').doc(id).delete()
+        console.log('test')
+        await db.collection('books').doc(id).delete()
         res.send(id)
 
     } catch (error) {
@@ -87,6 +105,9 @@ router.get('/:id', async function (req, res) {
         res.send('error when searching for the book', error);
     }
 })
+
+
+
 
 
 module.exports = router;
