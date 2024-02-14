@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-let db = require('../db')
+let db = require('../db');
 const cloudinary = require('cloudinary').v2;
 
 
@@ -8,11 +8,7 @@ router.post('/', async function (req, res) {
     const body = req.body
     try {
 
-        const libroRef = await db.collection('books').add({
-            titulo: body.titulo,
-            autor: body.autor,
-            categoria: body.categoria
-        });
+        const libroRef = await db.collection('books').add(body);
 
         const obj = (await libroRef.get()).data()
         obj.id = libroRef.id
