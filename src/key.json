@@ -1,13 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "bubbo-prueba-tecnica-3ff05",
-  "private_key_id": "05472416f8a70d2d5d005d270c79382be1cd2041",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/fRNonDNkg3GH\nvM+FTWa2iGy0cD20n80/NqE2VSzAP4s/Sjr+mNhHa38hT9HtuHSq9ctR71DVtDxL\nckd+C9bd81KUaSj++KRt4PbvLYvQ9KxOQGwLEfIiAmlZfVypzGdUqcZsuQdtfC/O\nLIUacPPO1qTviauBVI0ElIGJodVMJE/BMBM1nIHduUciF0YRUt5tr2RF3SKt1S7s\n0csz0va/gtqMLuG3RcAdZ3j7RnxYsjdf2PuniUDSC2O3erU+P9UHVqiVjE232ylr\ntBq2rBvRdq3GAoyu0A2QJKpelaxIQ16JoMeE7wx46CfWhKKw5dEQOYoJq3g+r3co\nuBjNcbxpAgMBAAECggEAOS3OiVq3J+juEjOpner2ZEQJfbnUWyaqoZkc+33kjoWK\n/XubcSHP10e8nwRYMc12HQSnUVCOSTn4FSlLOtKrNvxs6L8cDELPyrW11sa5bMxa\n1UT8XjPeIxSoQ54g+Nz97/SAOT/o/WLrXXvCxRn8W4ORnat0yHooX7k+kwv9hq39\n2d2jsiTJwNVQBwf7mtMWwndSeby1fje45JY0gXRQxV8KBXaxSG8s05Lct8nrFLHo\nKdIyrXoxdt+SvHnqceo4V6ch9mQNA6H+JV3iJSvK4UXbqhl7Mi+mQu2Kc/v284zm\nOSrVRy7HOD238UyVyT12Hnfpn0Qg0bNz+DGXn3UuPwKBgQD6pDK00fvISwtVGheK\n5obPjzR/AxGcPGdbURNWAOnB5hjDELkHrn//OLAOqJk3yGNdvUtjRMtFsSaBJ9iV\nnVrEonOwg7Pxdt4NhEiI6snNGD8p19JmkTbUgXCpcYSIEAYCQjm93z1ZpPC2j5gG\n/nmDNAS1q1RUIPt6mwUdAck/zwKBgQDDlR/iNxDNfPM6MPhnVh09xAwzMZPGZl9M\nTTHASPmzCc5Ak/jyDpMf1ha6/r5d/ikmn6abdSSerG2jb2ypABmxxSd+0PQsTQlo\nmLpBTFbj0DzBXl4FqiEieJg2nnr9762Yyx7E6pnCshljBJSlgqwLxeAtbp+qDCg4\nf3jdUJbWRwKBgFI5o9jmOm+PDvywPqD216soE9THMPPMbSvsASfpzMYrslvsFIeM\nm7ki478rWHiQaOjLvPuoCfenEja017zdjnWLxeBWlKXWlSpiB1nDjMiX98DGaOP1\nJ8O3YzpzX0Mz3oTHLSI5JmtOTRnXKczBlyOP4SuoNVYUK+whByBpAZjJAoGAOfnj\nmKggF/m5E//eMqupQVzzDN3eY0qHZ1PespQvSK5YcHYsrnw5io9o74eCINStmCBt\nP9nqwAp2+aKXAEXiV/sMaSBBsTwo1NOpKqAZhbB9wghaMK2s4s4CuPYjmVDKEefs\nOA0fBULMGbkK40EoBNlkSbNoKv0tkwneZyRzghMCgYEAke7X1eB96KX/MbCALOXz\nYIpwlEv2tdq+SBOouoQ4WyFHFeebMJxU+vMZTi6u508y9JvMWwjoEdX2yHlM3Iz1\nYjIAo3UHzVjia+SnLgL7xOlfh8lM1QS52vCmPORCrErkUgQ8mIKL4+ZvnrArOBwU\nCrT1kqjsv2YzaJac06YeSTw=\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-35poe@bubbo-prueba-tecnica-3ff05.iam.gserviceaccount.com",
-  "client_id": "116139236278391079346",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-35poe%40bubbo-prueba-tecnica-3ff05.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
+
