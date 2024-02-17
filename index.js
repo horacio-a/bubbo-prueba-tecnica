@@ -1,7 +1,6 @@
 let express = require('express');
 let cors = require('cors')
 let books = require('./src/api/books');
-require("dotenv").config({ path: "./.env" })
 
 
 let app = express()
