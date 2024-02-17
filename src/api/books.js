@@ -7,16 +7,15 @@ const cloudinary = require('cloudinary').v2;
 router.post('/', async function (req, res) {
     const body = req.body
     try {
-
+        console.log(body)
         const libroRef = await db.collection('books').add(body);
-
         const obj = (await libroRef.get()).data()
-        obj.id = libroRef.id
-        res.json(obj)
+        body.id = libroRef.id
+        res.json(body)
 
     } catch (error) {
-        console.error('Error adding the book: ', error);
-        res.send('Error adding the book: ', error)
+        console.error('Error adding the book: ' + error);
+        res.send('Error adding the book: ' + error)
     }
 })
 
@@ -33,8 +32,8 @@ router.post('/multi', async function (req, res) {
         res.json(response)
 
     } catch (error) {
-        console.error('Error adding the book: ', error);
-        res.send('Error adding the book: ', error)
+        console.error('Error adding the book: ' + error);
+        res.send('Error adding the book: ' + error)
     }
 })
 
@@ -47,11 +46,12 @@ router.put('/:id', async function (req, res) {
         const libroRef = await db.collection('books').doc(id).get()
         const obj = libroRef.data()
         obj.id = libroRef.id
+        console.log(obj)
         res.json(obj)
 
     } catch (error) {
-        console.error('Error while editing ', error);
-        res.send('Error while editing ', error)
+        console.error('Error while editing ' + error);
+        res.send('Error while editing ' + error)
     }
 })
 
@@ -65,8 +65,8 @@ router.delete('/:id', async function (req, res) {
         res.send(id)
 
     } catch (error) {
-        console.error('Error while deleting ', error);
-        res.send('Error while deleting ', error)
+        console.error('Error while deleting ' + error);
+        res.send('Error while deleting ' + error)
     }
 })
 
@@ -81,8 +81,8 @@ router.get('/', async function (req, res) {
         }))
 
     } catch (error) {
-        console.error('error when searching for books', error);
-        res.send('error when searching for books', error);
+        console.error('error when searching for books' + error);
+        res.send('error when searching for books' + error);
     }
 })
 
@@ -97,8 +97,8 @@ router.get('/:id', async function (req, res) {
         res.json(obj)
 
     } catch (error) {
-        console.error('error when searching for the book', error);
-        res.send('error when searching for the book', error);
+        console.error('error when searching for the book' + error);
+        res.send('error when searching for the book' + error);
     }
 })
 
@@ -107,3 +107,5 @@ router.get('/:id', async function (req, res) {
 
 
 module.exports = router;
+
+
